@@ -73,10 +73,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5px;
-  height: 100px;
   max-width: 600px;
-  margin-top: 20px;
+  width: 600px;
+  margin-top: 50px;
 }
 
 .listagem-cards .card-apartamento .img-apartamento {
