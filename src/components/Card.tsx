@@ -23,16 +23,18 @@ export default class Card extends React.Component < any, any > {
 
     render() {
         return (
-            <div className="card-apartamento">
+            <div className="card apartamento-card ">
                 
-                <img alt="Imagem do apartamento" src={this.state.logo} className="App-logo"></img>
+                <img alt="Imagem do apartamento" src={this.state.logo} className="card-img-top"></img>
                 
-                <div className="texto-card">
-                    <h2>{this.state.title}</h2>
-                    <p>
+                <div className="card-body">
+                    <h5 className="card-title" >{this.state.title}</h5>
+                    <p className="card-text">
                         {this.state.description}
                     </p>
                 </div>
+                
+
                 
             </div> 
         );

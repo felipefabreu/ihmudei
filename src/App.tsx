@@ -24,8 +24,23 @@ export default class App extends React.Component < any, any >{
           logo: logo
         },
         {
-          title: "Casa do Vinicoi",
-          description: "Descrição do apartamento do vinicoi",
+          title: "Apartamento 3",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sapiente, voluptatibus perspiciatis numquam commodi molestias quia nihil error maxime quam voluptatem reiciendis doloribus ratione ipsa aut vero ducimus non. Consequuntur! ",
+          logo: logo
+        },
+        {
+          title: "Apartamento 4",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
+          logo: logo
+        },
+        {
+          title: "Apartamento 5",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
+          logo: logo
+        },
+        {
+          title: "Apartamento 6",
+          description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laboriosam qui voluptatibus? Magnam, iusto voluptatem! Labore nam placeat voluptates delectus temporibus reiciendis illo, eligendi at unde, cumque dolor, maiores doloremque!  ",
           logo: logo
         }
       ]

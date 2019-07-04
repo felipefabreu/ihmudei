@@ -32,40 +32,16 @@
   }
 }
 
-
 .listagem-cards{
-  align-items: center;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  padding: 5px;
-
-  .card-apartamento{
-    display: flex;
-
-    max-width: 600px;
-    width: 600px;
-    margin-top: 50px;
-    
-    
-    .img-apartamento{
-      width: 100px;
-    }
-
-    .texto-card{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: left;
-      h2{
-        margin: 0;
-        padding: 0;
-      }
-      p{
-        text-align: left;
-      }
-
-    }
-
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  .apartamento-card{
+    width: 250px;
+    margin: 20px;
   }
+ 
 
 }

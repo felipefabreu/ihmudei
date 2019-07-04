@@ -32,5 +32,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Sistema/aplicativo para organizar os pensamentos e não se afobar na hora de se mudar.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipefabreu/ihmudei.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipefabreu/ihmudei/issues"
+  },
+  "homepage": "https://github.com/felipefabreu/ihmudei#readme"
 }
