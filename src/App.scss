@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+
+  h1{
+    margin-top: 50px;
+  }
 }
 
 .App-logo {
@@ -31,6 +35,59 @@
     transform: rotate(360deg);
   }
 }
+
+.app-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  
+  .form-apartamento{
+    max-width: 650px;
+    min-width: 350px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    .app-form-group{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .app-form-buttons{
+
+      align-self: flex-end;
+
+      .btn-adicionar{
+        margin-left: 10px;
+        background: #385170;
+        color: #ddd;
+        transition: all 0.2s;
+      } 
+      .btn-adicionar:hover{
+          color: #ddd;
+          opacity: 0.7;
+      }
+
+      .btn-limpar{
+        color: #385170;
+        background: #ddd;
+        transition: all 0.2s;
+      }
+      .btn-limpar:hover{
+          opacity: 0.7;
+          color: #385170;
+      }
+      
+
+    }
+    
+    
+  }
+  
+}
+
 
 .listagem-cards{
   margin-top: 50px;

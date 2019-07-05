@@ -19,30 +19,31 @@ export default class App extends React.Component < any, any >{
           logo: logo
         },
         {
-          title: "Apartamento 2",
+          title: "Apartamento 1",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
+          logo: logo
+        },{
+          title: "Apartamento 1",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
+          logo: logo
+        },{
+          title: "Apartamento 1",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
+          logo: logo
+        },{
+          title: "Apartamento 1",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
+          logo: logo
+        },{
+          title: "Apartamento 1",
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
+          logo: logo
+        },{
+          title: "Apartamento 1",
           description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
           logo: logo
         },
-        {
-          title: "Apartamento 3",
-          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sapiente, voluptatibus perspiciatis numquam commodi molestias quia nihil error maxime quam voluptatem reiciendis doloribus ratione ipsa aut vero ducimus non. Consequuntur! ",
-          logo: logo
-        },
-        {
-          title: "Apartamento 4",
-          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
-          logo: logo
-        },
-        {
-          title: "Apartamento 5",
-          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, iure commodi animi impedit corporis laudantium inventore excepturi consequatur eos aliquam ipsum doloremque corrupti, atque illum error debitis dicta dignissimos cum! ",
-          logo: logo
-        },
-        {
-          title: "Apartamento 6",
-          description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laboriosam qui voluptatibus? Magnam, iusto voluptatem! Labore nam placeat voluptates delectus temporibus reiciendis illo, eligendi at unde, cumque dolor, maiores doloremque!  ",
-          logo: logo
-        }
+        
       ]
 
     };
@@ -57,17 +58,40 @@ export default class App extends React.Component < any, any >{
     return (
       <div className="App">
         
-        <h1>Apartamentos favoritos</h1>
-        
-        <div className="listagem-cards">
-        
-          {apartamentos.map(function (apartamento: any) {
-            return (
-              <Card title={apartamento.title} description={apartamento.description} logo={apartamento.logo}/>
-            );
-          })}
-           
+        <div className="app-form">
+          <h1>Novo apartamento</h1>
+
+          <form className="form-apartamento">
+            <div className="form-group app-form-group">
+              <label htmlFor="formGroupTitulo" >Título</label>
+              <input type="text" className="form-control" id="form-titulo" placeholder="Título" ></input>
+            </div>
+            <div className="form-group app-form-group">
+              <label htmlFor="formGroupDescricao" >Descrição</label>
+              <input type="text" className="form-control" id="form-descricao" placeholder="Descrição do apartamento"></input>
+            </div>
+            <div className="form-group app-form-buttons">
+              <button className="btn btn-limpar" >Limpar</button>
+              <button className="btn btn-adicionar " >Adicionar</button>
+            </div>
+          </form>
             
+
+        </div>
+
+        <div className="app-favoritos">
+          <h1>Apartamentos favoritos</h1>
+        
+          <div className="listagem-cards">
+          
+            {apartamentos.map(function (apartamento: any) {
+              return (
+                <Card title={apartamento.title} description={apartamento.description} logo={apartamento.logo}/>
+              );
+            })}
+            
+            
+          </div>
         </div>
   
       </div>
