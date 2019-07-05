@@ -3,6 +3,7 @@ import React from 'react';
 import logo from './logo.svg';
 
 import Card from './components/Card';
+import FormApartamento from './components/FormApartamento';
 
 import './App.css';
 
@@ -47,9 +48,9 @@ export default class App extends React.Component < any, any >{
       ]
 
     };
-
-
   }
+
+ 
 
   render() {
 
@@ -58,26 +59,8 @@ export default class App extends React.Component < any, any >{
     return (
       <div className="App">
         
-        <div className="app-form">
-          <h1>Novo apartamento</h1>
-
-          <form className="form-apartamento">
-            <div className="form-group app-form-group">
-              <label htmlFor="formGroupTitulo" >Título</label>
-              <input type="text" className="form-control" id="form-titulo" placeholder="Título" ></input>
-            </div>
-            <div className="form-group app-form-group">
-              <label htmlFor="formGroupDescricao" >Descrição</label>
-              <input type="text" className="form-control" id="form-descricao" placeholder="Descrição do apartamento"></input>
-            </div>
-            <div className="form-group app-form-buttons">
-              <button className="btn btn-limpar" >Limpar</button>
-              <button className="btn btn-adicionar " >Adicionar</button>
-            </div>
-          </form>
-            
-
-        </div>
+        <FormApartamento />
+        
 
         <div className="app-favoritos">
           <h1>Apartamentos favoritos</h1>
